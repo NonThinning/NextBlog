@@ -1,7 +1,7 @@
 
 ## Use Data: GLC-FCS30D
 
-https://gee-community-catalog.org/projects/glc_fcs/
+[GLC_FCS30D Global 30-meter Land Cover Change Dataset (1985-2022) - awesome-gee-community-catalog](https://gee-community-catalog.org/projects/glc_fcs/)
 
 ```Python
 import ee
@@ -151,6 +151,54 @@ geemap.download_ee_image(
     filename="Copernicus DEM GLO-30-ROI.tif", 
     scale=30, 
     region=edge_ee.geometry(),
+    crs='EPSG:4326',
+    max_tile_dim = 512
+)
+```
+
+## Download Data：ERA5-Land Monthly Aggregated - ECMWF Climate Reanalysis
+
+5 years mean()
+
+```python
+import ee
+import geemap
+geemap.ee_initialize()
+
+dataset = (
+    ee.ImageCollection("ECMWF/ERA5_LAND/MONTHLY_AGGR")
+    .filterDate("2019-01-01", "2023-12-31")
+    .select("temperature_2m")
+)
+dataset
+
+tem_mean = dataset.mean()
+visualization = {
+  "bands": ['temperature_2m'],
+  "min": 250,
+  "max": 320,
+  "palette": [
+    '000080', '0000d9', '4000ff', '8000ff', '0080ff', '00ffff',
+    '00ff80', '80ff00', 'daff00', 'ffff00', 'fff500', 'ffda00',
+    'ffb000', 'ffa400', 'ff4f00', 'ff2500', 'ff0a00', 'ff00ff',
+  ]
+}
+map = geemap.Map()
+map.addLayer(tem_mean, visualization, "temperature_2m"); map
+
+edge_ee = geemap.geojson_to_ee(r"C:\Users\Qiao\Documents\FireEdge.geojson")
+edge_face = ee.Geometry.Polygon(edge_ee.geometry().coordinates())
+
+image_ERA5Land = (
+    tem_mean.clip(edge_face)
+)
+map.addLayer(image_ERA5Land, visualization, "temperature_2m"); map
+
+geemap.download_ee_image(
+    image_ERA5Land, 
+    filename="ERA5-Land-Tem2m-ROI.tif", 
+    scale=30, 
+    region=edge_face,
     crs='EPSG:4326',
     max_tile_dim = 512
 )

@@ -13,3 +13,4 @@ set GDAL_INCLUDE_PATH=%CONDA_PREFIX%\Library\include
 set GDAL_LIBRARY_PATH=%CONDA_PREFIX%\Library\lib
 set GDAL_VERSION=3.9.3
 ```
+
