@@ -98,3 +98,60 @@ geemap.download_ee_image(
     max_tile_dim = 512
 )
 ```
+
+## Download Data：Copernicus DEM GLO-30 
+
+```shell
+! conda install shapely -c conda-forge -y
+```
+
+```python
+import ee
+import geemap
+geemap.ee_initialize()
+
+dataset = ee.ImageCollection('COPERNICUS/DEM/GLO30')
+elevation = dataset.select('DEM')
+elevationVis = {
+  "min": 0.0,
+  "max": 1000.0,
+  "palette": ['0000ff','00ffff','ffff00','ff0000','ffffff'],
+}
+
+map = geemap.Map()
+map.setCenter(120, 52, 4)
+map.addLayer(elevation, elevationVis, 'DEM'); map
+
+import geopandas as gpd
+gdf = gpd.read_file(r"C:\Users\Qiao\Documents\FireEdge.geojson")
+gdf.crs # 查看坐标系
+# 提取第一个几何对象
+edge = gdf.geometry.iloc[0]; edge
+
+from shapely.geometry import MultiLineString, LineString, Polygon
+from shapely.ops import linemerge
+edge.geom_type # 图形类型
+edge.is_ring # 图形是否闭合，闭合的LineString可转换为多边形
+merged = Polygon(linemerge(edge)); merged # 转换为多边形
+merged = gpd.GeoDataFrame(geometry=[merged], crs="EPSG:4326") # 转换为GeoDataFrame
+
+edge_ee = geemap.gdf_to_ee(merged)
+
+map = geemap.Map()
+map.addLayer(edge_ee, {}, "Edge"); map
+
+image_ROI = (
+    elevation.mosaic()
+    .clip(edge_ee)
+)
+map.addLayer(image_ROI, elevationVis, "image_ROI"); map
+
+geemap.download_ee_image(
+    image_ROI, 
+    filename="Copernicus DEM GLO-30-ROI.tif", 
+    scale=30, 
+    region=edge_ee.geometry(),
+    crs='EPSG:4326',
+    max_tile_dim = 512
+)
+```

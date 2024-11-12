@@ -5,6 +5,8 @@
 
 [awesome-gee-community-catalog](https://gee-community-catalog.org/)
 
+[Earth Engine Data Catalog  |  Google for Developers](https://developers.google.cn/earth-engine/datasets)
+
 ### Document
 
 [Cloud-Based Remote Sensing with Google Earth Engine](https://www.eefabook.org/)
