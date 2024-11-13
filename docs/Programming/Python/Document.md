@@ -9,3 +9,4 @@
 
 [Earth Lab: Free, online courses, tutorials and tools | Earth Data Science - Earth Lab](https://www.earthdatascience.org/)
 
+[Unidata Python Training](https://unidata.github.io/python-training/)

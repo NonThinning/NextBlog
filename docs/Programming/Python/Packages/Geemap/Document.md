@@ -52,3 +52,5 @@
 [Sentinel Hub](https://www.sentinel-hub.com/)
 
 > [Sinergise](https://www.sinergise.com/)
+
+[Open Land Data services](https://openlandmap.github.io/book/) | STAC Support
