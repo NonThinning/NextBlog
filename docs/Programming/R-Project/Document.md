@@ -8,3 +8,7 @@
 ## Hydrology
 
 [Hydroinformatics at VT (vt-hydroinformatics.github.io)](https://vt-hydroinformatics.github.io/)
+
+## Geography
+
+[Geospatial Data Science with Julia](https://juliaearth.github.io/geospatial-data-science-with-julia/)
