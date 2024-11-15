@@ -30,6 +30,8 @@
 - [シェルノサージュ wiki - シェルノサージュDX攻略wiki](https://ciel.wiki-wiki.jp/)
 - [Atelier Series Guide - Barrel Wisdom](https://barrelwisdom.com/)
 
+- [Atelier (Series)](https://pan.huang1111.cn/s/MPBLSx?path=%2F)
+
 [KEMCO](https://www.kemco-games.com/global/games.html)
 
 [GalaxyTrail, LLC - Developer of Freedom Planet](https://galaxytrail.com/home)

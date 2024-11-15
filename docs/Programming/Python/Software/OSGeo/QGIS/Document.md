@@ -1,4 +1,8 @@
 
+## Book
+
+[Books & News from Locate Press | Geospatial Open Source E-Books](https://locatepress.com/)
+
 ## Map
 
 [World Imagery Wayback](https://livingatlas.arcgis.com/wayback/)

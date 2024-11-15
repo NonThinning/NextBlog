@@ -25,6 +25,10 @@ NSP info
 
 [FFHOME NSGame Manager v11.1 正式版 | 菲菲的家](http://www.ffhome.com/works/1814.html)
 
+NSP Download
+
+[Switch520](https://www.gamer520.com/) | [永久防迷路](https://sway.cloud.microsoft/1ESaLEE3x47BTgZC)
+
 ## Windows
 
 [Main Page - Exagear International](https://www.exagear.wiki/index.php?title=Main_Page)

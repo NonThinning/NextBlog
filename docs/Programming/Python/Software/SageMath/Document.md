@@ -10,3 +10,4 @@
 [An Infinite Descent into Pure Mathematics – Introductory textbook on mathematical proof](https://infinitedescent.xyz/)
 
 > [Clive Newstead / infdesc · GitLab](https://gitlab.com/cnewstead/infdesc/)
+
