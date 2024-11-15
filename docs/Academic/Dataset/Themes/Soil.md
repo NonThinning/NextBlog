@@ -3,6 +3,8 @@
 
 > [Keys to Soil Taxonomy | Natural Resources Conservation Service](https://www.nrcs.usda.gov/resources/guides-and-instructions/keys-to-soil-taxonomy) | US 土壤分类
 >
+> [Soil Survey Manual | Natural Resources Conservation Service](https://www.nrcs.usda.gov/resources/guides-and-instructions/soil-survey-manual) | NCSS
+>
 > [The Canadian System of Soil Classification, 3rd edition](https://sis.agr.gc.ca/cansis/taxa/cssc3/index.html) | CA 土壤分类
 >
 > [国家土壤信息服务平台](http://www.soilinfo.cn/map/index.aspx) | CN 土壤分类
@@ -19,3 +21,4 @@
 >
 > [Harmonized World Soil Database (HWSD) version 2.0](https://data.isric.org/geonetwork/srv/chi/catalog.search#/metadata/54aebf11-ec73-4ff8-bf6c-ecff4b0725ea) 
 
+[Size, distribution, and vulnerability of the global soil inorganic carbon | Science](https://www.science.org/doi/10.1126/science.adi7918) | [Global Soil Inorganic Carbon Database](https://figshare.com/s/26f03972cc42b2e1e09f) | 无机碳制图

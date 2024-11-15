@@ -13,8 +13,10 @@
 
 [国家标准全文公开](https://openstd.samr.gov.cn/bzgk/gb/index)
 
-[国家环境保护标准](https://datacenter.mee.gov.cn/websjzx/report/list.vm)
+[国家环境保护标准](https://datacenter.mee.gov.cn/websjzx/report%21list.action?xmlname=1520238134405)
 
 > [土壤 粒度的测定 吸液管法和比重计法](https://www.mee.gov.cn/ywgz/fgbz/bz/bzwb/jcffbz/201912/W020191227499396263789.pdf)
 >
 > [土壤 有机碳的测定 燃烧氧化-非分散红外法](https://www.mee.gov.cn/ywgz/fgbz/bz/bzwb/jcffbz/201403/W020140421394684147827.pdf)
+
+[全国土壤质量标准化技术委员会](http://www.china-soilquality.com/)

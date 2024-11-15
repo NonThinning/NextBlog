@@ -54,3 +54,5 @@
 > [Sinergise](https://www.sinergise.com/)
 
 [Open Land Data services](https://openlandmap.github.io/book/) | STAC Support
+
+[AI Earth (aliyun.com)](https://engine-aiearth.aliyun.com/#/)
